@@ -1,0 +1,203 @@
+<html>
+<head>
+	<title>The Chateau</title>
+	<link rel="stylesheet" type="text/css" href="./css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="./css/animate.css">
+	<link rel="stylesheet" type="text/css" href="./css/font-awesome.css">	
+	<link rel="stylesheet" type="text/css" href="./css/style.css">	
+	<link rel="icon" href="./images/top.00_png_srz" type="image/x-icon" sizes="16x16">
+	<style type="text/css">
+	body{
+		background: url('./images/bg21.jpg');				
+		font-family: "Adobe Fan Heiti Std B";
+    background-repeat: no-repeat;		
+		font-size: 18px;
+		height: 100%;
+		overflow-y: scroll;		
+		font-family: cursive;
+	}
+	#horizontal ul{
+			padding : 1em;
+			margin: 1em;
+			list-style: none;
+			font-size: 20px;
+		}		
+
+		.box {
+background: #3B5995;
+border-radius: 5px;
+padding: 0 45px;
+color:#3b5998;
+padding-top: 20px;
+padding-bottom: 20px;
+}
+		#horizontal li{
+			float: left;
+			position: relative;
+			padding-right: 100;
+			display: block;
+		}
+		#horizontal li ul{
+			display: none;
+			position: absolute;
+		}
+		#horizontal li : hover ul{
+			clear: both;
+			border-style: none;
+		}
+		.block{
+			margin: 0.5em 0;
+padding: 0.3em;
+font-size: 25px;
+font-weight: bold;
+font-style: italic;
+background-color: #1d9d74;
+border-radius: 3px;
+color: azure;
+margin-left: 22px;
+margin-right: 30px;
+		}
+		.block:hover{
+			margin: 0.5em 0;
+			padding: 0.3em;
+			font-size: 25px;
+			font-weight: bold;
+			font-style: italic;
+			background-color: #000153;
+			color: azure;
+			margin-left: 20px;
+			margin-right: 20px;
+			border-style: double;
+		}
+
+		.anim {
+    position: relative;
+    -webkit-animation-name: example; /* Chrome, Safari, Opera */
+    -webkit-animation-duration: 4s; /* Chrome, Safari, Opera */
+    -webkit-animation-delay: 2s; /* Chrome, Safari, Opera */
+    animation-name: example;
+    animation-duration: 4s;
+    animation-delay: 2s;
+}
+
+
+/* Chrome, Safari, Opera */
+@-webkit-keyframes example {
+    0%   {background-color:red; left:0px; top:0px;}
+    25%  {background-color:yellow; left:200px; top:0px;}
+    50%  {background-color:blue; left:200px; top:200px;}
+    75%  {background-color:green; left:0px; top:200px;}
+    100% {background-color:red; left:0px; top:0px;}
+}
+
+/* Standard syntax */
+@keyframes example {
+    0%   {background-color:red; left:0px; top:0px;}
+    25%  {background-color:yellow; left:200px; top:0px;}
+    50%  {background-color:blue; left:200px; top:200px;}
+    75%  {background-color:green; left:0px; top:200px;}
+    100% {background-color:red; left:0px; top:0px;}
+}
+.riht{
+	font-size: 30px;
+	list-style: none;
+	float: right;
+}
+	</style>
+	<script language="JavaScript1.1">
+		var slideimages=new Array()
+
+		function slideshowimages(){
+  			for (i=0;i<slideshowimages.arguments.length;i++){
+  					slideimages[i]=new Image()
+  					slideimages[i].src=slideshowimages.arguments[i]
+  			}
+		}
+
+
+		function gotoshow(){
+  				if (!window.winslide||winslide.closed)
+    				winslide=window.open(slidelinks[whichlink])
+  				else
+    				winslide.location=slidelinks[whichlink]
+    			winslide.focus()
+		}
+		</script>
+</head>
+<body>
+	<br>
+	<center>
+	<div>
+		<div style="width:5%;padding:0 30px 0 0;float:right;text-align: justify;
+margin-right: 10px;
+margin-left: 10px;">
+		<ul >
+                <li>
+                    <a href="" data-toggle="tooltip" data-placement="top" title="Facebook" rel="external nofollow" target="_blank">
+                        <i class="fa fa-facebook-square"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="" data-toggle="tooltip" data-placement="top" title="Twitter" rel="external nofollow" target="_blank">
+                        <i class="fa fa-twitter-square"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="" data-toggle="tooltip" data-placement="top" title="" rel="external nofollow" target="_blank" data-original-title="Linkedin">
+                        <i class="fa fa-linkedin-square"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="" data-toggle="tooltip" data-placement="top" title="Google Plus" rel="external nofollow" target="_blank">
+                        <i class="fa fa-google-plus-square"></i>
+                    </a>
+                </li>                    
+            </ul>
+        </div>
+		<div class="rotateInUpRight animated">
+		<img src = "./images/top.00_png_srz"/>
+		<h1><u>The Chateau </u></h1><br>
+		<h3><b><font color="#088A68"><i class="fa fa-coffee"></i>&nbsp;The Exclusive destination&nbsp;<i class="fa fa-coffee"></i></font></b></h3>
+		</div>	
+		<div id = "horizontal" class="animated flipX">
+		<ul class="navigation box btn-group" id="navigation">
+			<li class="btn-primary rubberBand animated fa fa-home"><a href="index.html"><font><b>Home</font></a></font></li>
+				<li><a href="Wedding-event.html"><b>Wedding and events</font></a></li>
+				<li><a href="./GammaGallery/index.html"><b>Gallery</a></li>
+				<li><a href="Press.html"><b>Press</a></li>
+				<li><a href="Venue.html"><b>Venue</a></li>				 
+				<li><a href="Register.php">Register</a></li>				  
+		</ul>	
+							
+		</div>
+		<div id = "hom">
+			<br><p>
+			<p class="block anim"><i class="fa fa-heart"></i><font>&nbsp;Turn Your Dreams Into Reality&nbsp;</font><i class="fa fa-heart"></i></p>
+			</p>
+			<a href="javascript:gotoshow()"><img src="./images/slide2.00_jpg_srz" name="slide" border=0 width = "1300px" style="border:10px solid #337ab7;"></a>
+			<script>
+				slideshowimages("./images/slide2.00_jpg_srz","./images/slide1.00_jpg_srz","./images/slide3.00_jpg_srz")
+				var slideshowspeed=2000
+				var whichlink=0
+				var whichimage=0
+
+				function slideit(){
+  					if (!document.images)
+    					return
+    				document.images.slide.src=slideimages[whichimage].src
+    				whichlink=whichimage
+
+  					if (whichimage<slideimages.length-1)
+    					whichimage++
+  					else
+    					whichimage=0
+    				setTimeout("slideit()",slideshowspeed)
+				}
+				slideit()
+			</script><br>
+			<!--<p id = "content">
+			The Chateau is an exclusive destination at Maple street for you to arrange your pre-wedding parties, receptions, weddings and parties. This allows you to select your type of party, the food you want to be served and the theme you want to have for your party and so on. We also offer other services like DJ, Photography and other necessary services as per customer's interest.</p>-->
+		</div>
+	</center><br>
+</body>
+</html>

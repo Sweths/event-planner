@@ -1,0 +1,18 @@
+The Event Planners (The Chateau)
+
+Front End : HTML,CSS,Javascript
+Back End : PHP
+
+This is an official website of the event planners named The Chateau
+
+Here the user can go through all the offers provided by the planners and register themselves
+
+Software requirement : WAMP
+
+To open and run the project
+1. Download and Unzip event-planner.zip file on your local system.
+2. Put this file inside wamp/www/ 
+3. Open phpmyadmin
+Create Database named proj.
+Import database reg.sql. 
+4. Open Your browser put http://localhost/event-planner/ 
